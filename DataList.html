@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data List</title>
+  </head>
+  <body>
+    <div>
+      <h1><i>Data List :-</i></h1>
+      <ul>
+        <li><a href="#Project1">Project-1</a></li>
+        <li><a href="#Project2">Project-2</a></li>
+        <li><a href="#Project3">Project-3</a></li>
+        <li><a href="#Project4">Project-4</a></li>
+        <li><a href="#Project5">Project-5</a></li>
+      </ul>
+    </div>
+    <h1 id="Project1">Project-1</h1>
+    <pre>
+        #include&lt;stdio.h&gt;
+            void main()
+            {
+                int marks[7];
+                int total=0;
+                float avg=0;
+                for(int i=0; i<7; i++)
+                {
+                    do
+                    {
+                        printf(" Enter Marks #%d :- ", (i+1));
+                        scanf("%d",&marks[i]);
+                    }
+                    while(marks[i]<0 || marks[i]>100);
+                    total+=marks[i];
+                }
+                avg=total/7.0;
+                printf(" Your Total Marks Are :- %d \n",total);
+                printf(" Your Average Marks Are :- %f \n",avg);
+                if(avg>=0 && avg<=100)
+                {
+                    if(avg>80)
+                    {
+                        printf("* Grade A *");
+                    }
+                    else if(avg>50)
+                    {
+                        printf("* Grade B *");
+                    }
+                    else if(avg>35)
+                    {
+                        printf("* Grade C *");
+                    }
+                    else
+                    {
+                        printf("* FAIL *");
+                    }
+                }
+                else
+                {
+                    printf("* INVALID CHOICE *");
+                }
+            }        
+        </pre>
+    <h1 id="Project2">Project-2</h1>
+    <pre>
+            #include&lt;stdio.h&gt;
+                void main()
+                {
+                    char yes='Y';
+                    while(yes=='Y' || yes=='y')
+                    {
+                        int n,i;
+                        printf("* ENTER NUMBER *\n");
+                        scanf("%d",&n);
+                        for(i=1; i<=10; i++)
+                        {
+                            printf(" %d * %d = %d \n",n,i,n*i);
+                        }
+                    }
+                    printf("\n Press Y To Continue \n");
+                    fflush(stdin);
+                    scanf("%c",&yes);
+                }
+        </pre>
+    <h1 id="Project3">Project-3</h1>
+    <pre>
+        #include&lt;stdio.h&gt;
+            void main()
+            {
+                char yesno='Y';
+                while(yesno=='Y' || yesno=='y')
+                {
+                    int math,eng,sci,hind,eco;
+                    int total=0;
+                    float avg;
+                    do
+                    {
+                        printf("* Enter Your Maths Marks *\n");
+                        scanf("%d",&math);
+                    }
+                    while(math<0 ||  math>100);
+                    do
+                    {
+                        printf("* Enter Your English Marks *\n");
+                        scanf("%d",&eng);
+                    }
+                    while(eng<0 || eng>100);
+                    do
+                    {
+                        printf("* Enter Your Science Marks *\n");
+                        scanf("%d",&sci);
+                    }
+                    while(sci<0 || sci>100);
+                    do
+                    {
+                        printf("* Enter Your Hindi Marks *\n");
+                        scanf("%d",&hind);
+                    }
+                    while(hind<0 || hind>100);
+                    do
+                    {
+                        printf("* Enter Your Economics Marks *\n");
+                        scanf("%d",&eco);
+                    }
+                    while(eco<0 || eco>100);
+                    total=math+eng+sci+hind+eco;
+                    avg=total/5.0;
+                    printf("* Your Total Is %d *\n",total);
+                    printf("* Your Average Marks Are %f *\n",avg);
+                    if(avg>=0 && avg<=100)
+                    {
+                        if(avg>80)
+                        {
+                            printf("* Grade A *");
+                        }
+                        else if(avg>50)
+                        {
+                            printf("* Grade B *");
+                        }
+                        else if(avg>35)
+                        {
+                            printf("* Grade C *");
+                        }
+                        else
+                        {
+                            printf("* FAIL *");
+                        }
+                    }
+                    else
+                    {
+                        printf("* INVALID CHOICE *");
+                    }
+                    printf("\n Press Y To Continue \n");
+                    fflush(stdin);
+                    scanf("%c",&yesno);
+                }
+            }
+            </pre>
+    <h1 id="Project4">Project-4</h1>
+    <pre>
+            #include&lt;stdio.h&gt;
+                void swapping(int *x,int *y)
+                {
+                    int t;
+                    t=*x;
+                    *x=*y;
+                    *y=t;
+                }
+                
+                void main()
+                {
+                    int a=5,b=10;
+                    printf(" Before Calling Function :- a=%d & b=%d \n",a,b);
+                    swapping(&a,&b);
+                    printf(" After Calling Function :- a=%d & b=%d \n",a,b);
+                }
+        </pre>
+    <h1 id="Project5">Project-5</h1>
+    <pre>
+            #include&lt;stdio.h&gt;
+                void main()
+                {
+                    char yesno='Y';
+                    while(yesno=='Y' || yesno=='y')
+                    {
+                        int a,b;
+                        int ans;
+                        printf(" Enter The Value Of A : \n");
+                        scanf("%d",&a);
+                        printf(" Enter The Value Of B : \n");
+                        scanf("%d",&b);
+                        printf("************************************\n");
+                        ans=a+b;
+                        printf("* Your Addition Answer Is :- %d\n",ans);
+                        ans=a-b;
+                        printf("* Your Subtraction Answer Is :- %d\n",ans);
+                        ans=a*b;
+                        printf("* Your Multiplication Answer Is :- %d\n",ans);
+                        ans=a/b;
+                        printf("* Your Division  Answer Is :- %d\n",ans);
+                        printf("*************************************");
+                        printf("\n Press Y To Continue \n");
+                        fflush(stdin);
+                        scanf("%c",&yesno);
+                    }
+                }
+            </pre>
+  </body>
+</html>
