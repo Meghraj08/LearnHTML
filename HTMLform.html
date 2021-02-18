@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/indianlogo.png" />
+  <title>HTML Form</title>
+</head>
+
+<body>
+  <h1>Submit a Resume</h1>
+  <form>
+    <table>
+      <th>Full Name :-</th>
+      <td>
+        <input type="text" name="Name" value="" placeholder="First Name" maxlength="10" minlength="1" />
+        <input type="text" name="Name" value="" placeholder="Middle Name" maxlength="10" minlength="1" />
+        <input type="text" name="Name" value="" placeholder="Last Name" maxlength="10" minlength="1" />
+      </td>
+      <tr>
+        <th>Address :-</th>
+        <td>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Address"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th>Country :-</th>
+        <td>
+          <select name="Country" id="">
+            <optgroup label="Select Your Country">
+              <option value="" disabled selected>Select Your Country</option>
+              <option value="">India</option>
+              <option value="">USA</option>
+              <option value="">Africa</option>
+              <option value="">Sri Lanka</option>
+              <option value="">Canada</option>
+              <option value="">China</option>
+              <option value="">Japan</option>
+              <option value="">Korea</option>
+              <option value="">UAE</option>
+              <option value="">Italy</option>
+              <option value="">England</option>
+              <option value="">Pakistan</option>
+              <option value="">Turkey</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <th>Phone :-</th>
+      <td>
+        <input type="text" name="Phone" value="" placeholder="Phone Number" maxlength="10" minlength="1" />
+      </td>
+      <tr>
+        <th>E-mail :-</th>
+        <td>
+          <input type="text" name="E-mail" value="" placeholder="ex: myname@example.com" maxlength="10" minlength="1" />
+        </td>
+      </tr>
+      <tr>
+        <th>Areas Of Interest :-</th>
+        <td>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Performance Coach" />
+            <label for="">Performance Coach</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Account Manager" />
+            <label for="">Account Manager</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Administrative" />
+            <label for="">Administrative</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Human Resources" />
+            <label for="">Human Resources</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Clerk" />
+            <label for="">Clerk</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Sales" />
+            <label for="">Sales</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Areas Of Interest" value="Technology" />
+            <label for="">Technology</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Skill Level :-</th>
+        <td>
+          <select name="Skill Level" id="">
+            <optgroup label="Select Your Skill Level">
+              <option value="" disabled selected>Select Your Skill Level</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </td>
+      </tr>
+    </table>
+  </form>
+  <marquee>
+    <h2><mark>Please Don't Enter Any Invalid Or Misinformation.</mark></h2>
+  </marquee>
+</body>
+
+</html>
